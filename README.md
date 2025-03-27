@@ -1,30 +1,37 @@
 # Ramadan Sehri & Iftar Alarm System
 Overview
-A Python-based desktop app to alert users for Sehri and Iftar during Ramadan. Fetches prayer times via Aladhan API, plays custom audio alarms, sends notifications, and features a Ramadan-themed Tkinter GUI.
+A Python-based console application to alert users for Sehri and Iftar during Ramadan 2025. Uses a static calendar for Bahawalpur and adjusts prayer times for other Pakistani cities based on longitude differences. Plays audio alarms at the appropriate times.
 
 Features
-Real-time Sehri/Iftar times for Pakistani cities (e.g., Karachi, Lahore).
-Customizable MP3/WAV alarms for Sehri and Iftar.
-Desktop notifications at prayer times.
-Modern GUI with countdown, prayer time display, and status indicator.
-Confirmation pop-up when alarm is set.
+Supports 100+ Pakistani cities with longitude-based time adjustments.
+Static Ramadan 2025 calendar for Bahawalpur (March 2–31).
+Audio alarms for Sehri and Iftar (MP3 files).
+Real-time countdown display in the console.
+Multi-threaded for simultaneous time display and alarm checks.
 Installation
 Clone the repo:
-git clone https://github.com/[your-username]/ramadan-alarm-system.git
+
+git clone https://github.com/tahamueed/ramadan-alarm-system.git
 cd ramadan-alarm-system
 Install dependencies:
-pip install pygame requests plyer
-Ensure Tkinter is installed (Linux: sudo apt-get install python3-tk).
-Add sound files (sehri_alarm.mp3, iftar_alarm.mp3) to the directory.
+
+pip install pygame
+Add sound files (sehri_alarm.mp3, iftar_alarm.mp3) to the project directory.
 Usage
 Run the app:
+
 python ramadan_alarm_system.py
-Select a city, set custom sounds, and click "Start Alarm".
-View prayer times, countdown, and status. Alarms ring with notifications at Sehri/Iftar.
+Enter your city (e.g., "Lahore") and the current Roza number (1–30).
+View adjusted Sehri/Iftar times for your city.
+The console displays a countdown; alarms play at the specified times.
 Requirements
 Python 3.8+
-Internet connection
+Sound files (sehri_alarm.mp3, iftar_alarm.mp3)
 Troubleshooting
-No Sound: Check sound files or reselect via GUI.
-No Notifications: Verify plyer installation.
-API Errors: Ensure internet connectivity.
+No Sound: Ensure sound files are in the directory and are valid MP3s.
+Invalid Input: Enter a valid city and Roza number (1–30).
+Limitations
+Uses a static calendar for Bahawalpur; times are approximate for other cities.
+No GUI; console-based only.
+License
+MIT License. See  file.
