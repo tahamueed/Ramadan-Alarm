@@ -1,5 +1,5 @@
 # Ramadan Sehri & Iftar Alarm System
-Overview
+### Overview
 A Python-based console application to alert users for Sehri and Iftar during Ramadan 2025. Uses a static calendar for Bahawalpur and adjusts prayer times for other Pakistani cities based on longitude differences. Plays audio alarms at the appropriate times.
 
 Features
